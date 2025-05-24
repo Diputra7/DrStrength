@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Itachi",
+    "expertise": "Yoga & Stretching",
+    "experience": "5 tahun",
+    "contact": "081234567890",
+    "photo": "https://th.bing.com/th/id/OIP.u5jdC6LH5jEmN1vte6PXMgHaEK?w=301&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+  },
+  {
+    "id": 2,
+    "name": "Madara",
+    "expertise": "Cardio & Zumba",
+    "experience": "3 tahun",
+    "contact": "082198765432",
+    "photo": "https://th.bing.com/th/id/R.e7b5d8109f54a68898a98ad6f04f7b5a?rik=AWta%2bd3hp1stsg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f7ihdbEc.jpg&ehk=xgcQlAVPxFq3jkXOQTwfeXCSJG1WN6LJx6Mk7cavSCo%3d&risl=&pid=ImgRaw&r=0"
+  },
+  {
+    "id": 3,
+    "name": "Shisui",
+    "expertise": "Weight Training",
+    "experience": "7 tahun",
+    "contact": "081345678901",
+    "photo": "https://th.bing.com/th/id/OIP._ovr4ERSe7PGdzs9mwxHMgHaEX?w=281&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+  }
+]
