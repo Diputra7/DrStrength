@@ -15,6 +15,8 @@ import Loading from "./components/Loading";
 // import Login from "./pages/auth/Login";
 // import Register from "./pages/auth/Register";
 // import Forgot from "./pages/auth/Forgot";
+// import Members from "./pages/Members";
+// import MembersDetail from "./pages/MembersDetail";
 
 const MainLayout = React.lazy(() => import("./layouts/MainLayout"))
 const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"))
@@ -25,6 +27,8 @@ const Class = React.lazy(() => import("./pages/Class"))
 const NotFound400 = React.lazy(() => import("./error/NotFound400"))
 const NotFound401 = React.lazy(() => import("./error/NotFound401"))
 const NotFound403 = React.lazy(() => import("./error/NotFound403"))
+const Members = React.lazy(() => import("./pages/Members"))
+const MembersDetail = React.lazy(() => import("./pages/MembersDetail"))
 
 const Login = React.lazy(() => import("./pages/auth/Login"))
 const Register = React.lazy(() => import("./pages/auth/Register"))
@@ -39,6 +43,8 @@ function App() {
           <Route path="/Trainers" element={<Trainers />} />
           <Route path="/Exercise" element={<Exercise />} />
           <Route path="/Class" element={<Class />} />
+          <Route path="/Members" element={<Members />} />
+          <Route path="/Members/:id" element={<MembersDetail />} /> 
           <Route path="/NotFound400" element={<NotFound400 />} />
           <Route path="/NotFound401" element={<NotFound401 />} />
           <Route path="/NotFound403" element={<NotFound403 />} />

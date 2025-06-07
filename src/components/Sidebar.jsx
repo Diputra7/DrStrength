@@ -1,4 +1,4 @@
-import { MdRememberMe } from "react-icons/md"; 
+import { MdRememberMe } from "react-icons/md";
 import {
   FaUserAlt,
   FaRegCalendarAlt,
@@ -42,7 +42,12 @@ ${
               <span>Dashboard</span>
             </NavLink>
           </li>
-
+          <li>
+            <NavLink id="hal-4" to="/Members" className={menuClass}>
+              <MdRememberMe className="mr-3 text-xl" />
+              <span>Members</span>
+            </NavLink>
+          </li>
           <li>
             <NavLink id="hal-2" to="/Trainers" className={menuClass}>
               <IoBarbellSharp className="mr-3 text-xl" />
@@ -63,12 +68,8 @@ ${
               <span>Class</span>
             </NavLink>
           </li>
-          <li>
-            <NavLink id="hal-4" to="/Member" className={menuClass}>
-             <MdRememberMe className="mr-3 text-xl" />
-              <span>Member</span>
-            </NavLink>
-          </li>
+         
+
         </ul>
       </div>
 
@@ -77,28 +78,20 @@ ${
 
       {/* Settings & Logout */}
       <div className="space-y-2">
-      <div className="flex items-center px-3 py-2 rounded-md cursor-pointer text-gray-500 hover:bg-blue-50 hover:text-blue-500 text-sm font-normal transition">
-        <FaCog className="mr-2 text-base" />
-        <span>Settings</span>
+        <div className="flex items-center px-3 py-2 rounded-md cursor-pointer text-gray-500 hover:bg-blue-50 hover:text-blue-500 text-sm font-normal transition">
+          <FaCog className="mr-2 text-base" />
+          <span>Settings</span>
+        </div>
+        <Link
+          to="/login"
+          className="flex items-center px-3 py-2 rounded-md cursor-pointer text-gray-500 hover:bg-red-50 hover:text-red-500 text-sm font-normal transition"
+        >
+          <FaSignOutAlt className="mr-2 text-base" />
+          <span>Logout</span>
+        </Link>
       </div>
-      <Link
-        to="/login"
-        className="flex items-center px-3 py-2 rounded-md cursor-pointer text-gray-500 hover:bg-red-50 hover:text-red-500 text-sm font-normal transition"
-      >
-        <FaSignOutAlt className="mr-2 text-base" />
-        <span>Logout</span>
-      </Link>
-    </div>
 
       {/* Footer */}
-      <div className="mt-4 text-center">
-        <span className="text-xs text-gray-400 font-bold block">
-          DashStack Admin Dashboard
-        </span>
-        <p className="text-xs text-gray-400 font-light">
-          &copy; 2025 All Rights Reserved
-        </p>
-      </div>
     </div>
   );
 }

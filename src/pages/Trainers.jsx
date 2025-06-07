@@ -12,14 +12,7 @@ export default function Trainers() {
   return (
     <div id="dashboard-container" className="bg-gray-100 min-h-screen">
       <PageHeader title="Trainers" />
-
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-purple-700 mb-2 animate-pulse">
-          💪 Daftar Trainer Keren 💪
-        </h1>
-        <p className="text-gray-600">Kenalan dengan pelatih profesional yang siap membimbing kamu!</p>
-      </div>
-
+      
       <div className="overflow-x-auto bg-white p-6 rounded-xl shadow-lg border border-purple-200 mx-4 mb-6">
         <table className="min-w-full table-auto border-collapse">
           <thead className="bg-gradient-to-r from-pink-200 to-purple-200">
