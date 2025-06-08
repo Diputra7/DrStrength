@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "image": "https://th.bing.com/th/id/OIP.vjB3orpMi1RwudN6VHbyXwHaF7?rs=1&pid=ImgDetMain",
+    "name": "Susu Whey Protein 1kg",
+    "category": "Suplemen",
+    "price": "230,000",
+    "stock": 15
+  },
+  {
+    "id": 2,
+    "image": "https://i.pinimg.com/originals/0a/d4/fa/0ad4fad86d55df0f88d13acb8f34053e.jpg",
+    "name": "Energy Bar Coklat Almond",
+    "category": "Makanan Sehat",
+    "price": "15,000",
+    "stock": 50
+  },
+  {
+    "id": 3,
+    "image": "https://th.bing.com/th/id/OIP.JpzUwGMOcNsFTrE7k0bOiAHaFu?rs=1&pid=ImgDetMain",
+    "name": "Sabuk Gym",
+    "category": "Aksesoris",
+    "price": "145,000",
+    "stock": 25
+  }
+]

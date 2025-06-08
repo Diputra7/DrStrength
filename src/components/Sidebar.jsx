@@ -1,3 +1,4 @@
+import { ImQuotesRight } from "react-icons/im"; 
 import { MdRememberMe } from "react-icons/md";
 import {
   FaUserAlt,
@@ -68,7 +69,18 @@ ${
               <span>Class</span>
             </NavLink>
           </li>
-         
+           <li>
+            <NavLink id="hal-6" to="/Products" className={menuClass}>
+              <PiChalkboardTeacherLight className="mr-3 text-xl" />
+              <span>Products</span>
+            </NavLink>
+          </li>
+            <li>
+            <NavLink id="hal-6" to="/Quotes" className={menuClass}>
+              <ImQuotesRight className="mr-3 text-xl" />
+              <span>Quotes</span>
+            </NavLink>
+          </li>
 
         </ul>
       </div>

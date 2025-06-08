@@ -33,7 +33,6 @@ export default function Members() {
   return (
     <div id="dashboard-container" className="bg-gray-100 min-h-screen p-6">
       <PageHeader title="Members" />
-
       <input
         type="text"
         value={query}

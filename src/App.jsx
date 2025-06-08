@@ -2,6 +2,9 @@ import "./assets/tailwind.css";
 import React, { Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import Loading from "./components/Loading";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductsDetail";
+import Quotes from "./pages/Quotes";
 
 // import Dashboard from "./pages/Dashboard";
 // import Trainers from "./pages/Trainers";
@@ -45,6 +48,12 @@ function App() {
           <Route path="/Class" element={<Class />} />
           <Route path="/Members" element={<Members />} />
           <Route path="/Members/:id" element={<MembersDetail />} /> 
+          <Route path="/Products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetail />} />
+        
+        <Route path="/Quotes" element={<Quotes/>} />
+       
+
           <Route path="/NotFound400" element={<NotFound400 />} />
           <Route path="/NotFound401" element={<NotFound401 />} />
           <Route path="/NotFound403" element={<NotFound403 />} />
