@@ -1,12 +1,13 @@
-import { ImQuotesRight } from "react-icons/im"; 
+ import { ImQuotesRight } from "react-icons/im"; 
 import { MdRememberMe } from "react-icons/md";
 import {
   FaUserAlt,
   FaRegCalendarAlt,
   FaCog,
   FaSignOutAlt,
+  FaShoppingBag,
 } from "react-icons/fa";
-import { MdDashboard, MdOutlineClass } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
 import { BiBarChartAlt2, BiMessageSquareDots } from "react-icons/bi";
 import { PiChalkboardTeacherLight } from "react-icons/pi";
 import { IoBarbellSharp } from "react-icons/io5";
@@ -29,7 +30,7 @@ ${
       {/* Logo */}
       <div id="sidebar-logo" className="flex flex-col">
         <span className="text-3xl font-poppins-extrabolditalic text-biru">
-          DIPP<span className="text-gray-900">7</span>
+          Fix<span className="text-gray-900">Gym</span>
         </span>
         <span className="mt-2 text-gray-400">Classic Admin Dashboard</span>
       </div>
@@ -64,24 +65,25 @@ ${
           </li>
 
           <li>
-            <NavLink id="hal-4" to="/Class" className={menuClass}>
-              <MdOutlineClass className="mr-3 text-xl" />
-              <span>Class</span>
-            </NavLink>
-          </li>
-           <li>
             <NavLink id="hal-6" to="/Products" className={menuClass}>
-              <PiChalkboardTeacherLight className="mr-3 text-xl" />
+              <FaShoppingBag className="mr-3 text-xl" />
               <span>Products</span>
             </NavLink>
           </li>
-            <li>
-            <NavLink id="hal-6" to="/Quotes" className={menuClass}>
+
+          <li>
+            <NavLink id="hal-7" to="/Quotes" className={menuClass}>
               <ImQuotesRight className="mr-3 text-xl" />
               <span>Quotes</span>
             </NavLink>
           </li>
 
+          <li>
+            <NavLink id="hal-8" to="/Feedback" className={menuClass}>
+              <BiMessageSquareDots className="mr-3 text-xl" />
+              <span>Feedback</span>
+            </NavLink>
+          </li>
         </ul>
       </div>
 
@@ -102,8 +104,6 @@ ${
           <span>Logout</span>
         </Link>
       </div>
-
-      {/* Footer */}
     </div>
   );
 }

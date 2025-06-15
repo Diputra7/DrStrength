@@ -5,6 +5,9 @@ import Loading from "./components/Loading";
 import Products from "./pages/Products";
 import ProductDetail from "./pages/ProductsDetail";
 import Quotes from "./pages/Quotes";
+import MembersCRUD from "./pages/MembersCRUD";
+import Feedback from "./pages/Feedback";
+
 
 // import Dashboard from "./pages/Dashboard";
 // import Trainers from "./pages/Trainers";
@@ -26,7 +29,6 @@ const AuthLayout = React.lazy(() => import("./layouts/AuthLayout"))
 const Dashboard = React.lazy(() => import("./pages/Dashboard"))
 const Exercise = React.lazy(() => import("./pages/Exercise"))
 const Trainers = React.lazy(() => import("./pages/Trainers"))
-const Class = React.lazy(() => import("./pages/Class"))
 const NotFound400 = React.lazy(() => import("./error/NotFound400"))
 const NotFound401 = React.lazy(() => import("./error/NotFound401"))
 const NotFound403 = React.lazy(() => import("./error/NotFound403"))
@@ -45,11 +47,12 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/Trainers" element={<Trainers />} />
           <Route path="/Exercise" element={<Exercise />} />
-          <Route path="/Class" element={<Class />} />
           <Route path="/Members" element={<Members />} />
           <Route path="/Members/:id" element={<MembersDetail />} /> 
+           <Route path="/MembersCRUD" element={<MembersCRUD/>} />
           <Route path="/Products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetail />} />
+        <Route path="/Feedback" element={<Feedback />} />
         
         <Route path="/Quotes" element={<Quotes/>} />
        
