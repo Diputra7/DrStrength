@@ -4,10 +4,15 @@
     font-family: 'Poppins-ExtraBoldItalic';
     src: url('/fonts/Poppins-ExtraBoldItalic.ttf');
 }
+@font-face {
+    font-family: 'Manrope-SemiBold';
+    src: url('/fonts/Manrope-SemiBold.ttf');
+}
 
 
 @theme {
     --font-poppins-extrabolditalic: "Poppins-ExtraBoldItalic", sans-serif;
+    --font-Manrope-semibold: "Manrope-SemiBold", sans-serif;
 		
     --color-latar: #f3f4f6;
     --color-teks: #374151; 
