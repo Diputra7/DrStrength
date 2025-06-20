@@ -1,4 +1,4 @@
- import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { membersAPI } from "../services/membersAPI";
 import AlertBox from "../components/AlertBox";
@@ -21,11 +21,13 @@ export default function Members() {
   const statusOptions = ["Aktif", "Cuti", "Tidak Aktif"];
   const navigate = useNavigate();
 
+  //Menangani perubahan input form
   const handleChange = (e) => {
     const { name, value } = e.target;
     setDataForm({ ...dataForm, [name]: value });
   };
 
+  //memuat data member dari Supabase
   const loadMembers = async () => {
     try {
       setLoading(true);
